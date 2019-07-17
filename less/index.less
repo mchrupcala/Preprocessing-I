@@ -133,7 +133,23 @@ h3 {
 		padding: 10px;
 		margin-top: 10px;
 	}
-}
+	@media screen and (max-width: 900px) {
+		.headshot {
+			height: 60%;
+		}
+		.upper-banner {
+			height: 40rem;
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		.headshot {
+			height: 40%;
+		}
+		.upper-banner {
+			height: 20rem;
+		}
+	}
 
  .lower-banner {
 	 display: flex;
@@ -141,6 +157,7 @@ h3 {
 	 height: 300px;
 	 width: 100%;
 	 justify-content: space-between;
+ }
 
 	 p {
 		 padding: 10px;
@@ -157,10 +174,22 @@ h3 {
 		height: 300px;
 		.doubleColumn();
 	 }
+}
+
+ @media screen and (max-width: 900px) {
+	 .lower-banner {
+		 .flexColumn();
+	 }
  }
 
+ @media screen and (max-width: 500px) {
+	 .lower-banner {
+		 .flexColumn();
+	 }
+}
+
 .work-history {
-	flexColumn();
+	.flexColumn();
 	height: 800px;
 	width: 100%;
 
@@ -194,7 +223,7 @@ h3 {
 	}
 	.job-img-container {
 		height: 25rem;
-		doubleColumn();
+		.doubleColumn();
 		display: flex;
 	}
 
@@ -206,6 +235,20 @@ h3 {
 	}
 
 }
+
+@media screen and (max-width: 900px) {
+	.work-history {
+		.flexColumn();
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.work-history {
+		.flexColumn();
+	}
+}
+
+// CONTACT PAGE
 .contact-main {
 	.banner-design {
 		width: 100%;
