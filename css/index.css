@@ -1,1 +1,321 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Libre Franklin', sans-serif;
+}
+h1 {
+  font-size: 35px;
+  display: block;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-bottom: 2px solid black;
+}
+.nav-bar {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+h2 {
+  font-size: 2.5rem;
+  padding: 1rem;
+  font-weight: bold;
+  border-bottom: 0.2rem solid black;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.upper-banner {
+  display: flex;
+  flex-direction: column;
+  background: #e1e4e8;
+  width: 100%;
+  height: 60rem;
+  margin-bottom: 3rem;
+}
+.upper-banner .headshot {
+  height: 80%;
+  padding: 15px;
+}
+.upper-banner p {
+  padding: 10px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 900px) {
+  .upper-banner .headshot {
+    height: 60%;
+  }
+  .upper-banner .upper-banner {
+    height: 40rem;
+    width: 50rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .upper-banner .headshot {
+    height: 40%;
+  }
+  .upper-banner .upper-banner {
+    width: 50rem;
+    height: 20rem;
+  }
+}
+.upper-banner .lower-banner {
+  display: flex;
+  flex-flow: row wrap;
+  height: 300px;
+  width: 100%;
+  justify-content: space-between;
+}
+.upper-banner p {
+  padding: 10px;
+  line-height: 2rem;
+}
+.upper-banner li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 0.5rem;
+}
+.upper-banner .mission-statement,
+.upper-banner .list-skills {
+  height: 300px;
+  width: 48%;
+  padding: 0 1%;
+}
+@media screen and (max-width: 900px) {
+  .lower-banner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lower-banner {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.work-history {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 100%;
+}
+.work-history .job-container {
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  border: 0.1rem solid black;
+  border-radius: 0.3rem;
+  margin: 1rem 0;
+}
+.work-history .job-container:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.work-history .job-desc {
+  height: 25rem;
+  width: 48%;
+  padding: 0 1%;
+  display: flex;
+  flex-direction: column;
+}
+.work-history p {
+  padding: 1rem 1rem;
+  line-height: 2rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+.work-history .blank {
+  margin: 0 2%;
+}
+.work-history .job-img-container {
+  height: 25rem;
+  width: 48%;
+  padding: 0 1%;
+  display: flex;
+}
+.work-history .job-img {
+  width: 100%;
+  height: 25rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+@media screen and (max-width: 900px) {
+  .work-history {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .work-history {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+  }
+  .job-container,
+  .job-desc {
+    width: 50rem;
+    border: none;
+    flex-direction: column;
+  }
+}
+.contact-main .banner-design {
+  width: 100%;
+  height: 10rem;
+  border: 0.1rem solid #e1e4e8;
+  border-radius: 1rem;
+  background: #e1e4e8;
+  margin: 2rem 0;
+}
+.contact-main .form-section {
+  margin-top: 2.5rem;
+}
+.contact-main .form-field {
+  margin: 1rem 0;
+}
