@@ -1,8 +1,10 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+
+@mainfont: 'Libre Franklin', sans-serif;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -13,8 +15,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +27,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -55,5 +57,115 @@ table {
 
 html, body {
     height: 100%;
+		width: 80%;
+		margin: 0 auto;
+}
+//
+// RESET RULE ENDS //
+
+html {
+		font-size: 62.5%;
 }
 
+body {
+		font-size: 1.6rem;
+		font-family: @mainfont;
+}
+
+
+.nav-bar {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	margin-bottom: 5px;
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+}
+
+.upper-banner {
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+	background: #e1e4e8;
+	width: 100%;
+
+	.headshot {
+		height: 60%;
+		padding: 15px;
+	}
+
+	h1 {
+		font-size: 35px;
+		display: block;
+		margin-top: 15px;
+		margin-left: 10px;
+		border-bottom: 2px solid black;
+	}
+
+	p {
+		padding: 10px;
+		margin-top: 10px;
+	}
+}
+
+ .lower-banner {
+	 display: flex;
+	 flex-flow: row wrap;
+	 height: 300px;
+	 width: 100%;
+	 justify-content: space-between;
+
+	h2 {
+		font-size: 2.5rem;
+		padding: 1rem;
+		font-weight: bold;
+	}
+
+	 p {
+		 padding: 10px;
+	 }
+
+	 li {
+		 list-style-type: disc;
+		 list-style-position: inside;
+	 }
+ }
+
+ .mission-statement, .list-skills {
+	 height: 300px;
+	 width: 48%;
+	 padding: 0 1%;
+ }
+
+.work-history {
+	display: flex;
+	height: 800px;
+	width: 100%;
+	background: grey;
+
+	.job-container {
+		height: 3rem;
+		width: 100%;
+		border: 1px solid black;
+		display: flex;
+	}
+
+	.job-desc {
+		height: 2.5rem;
+		width: 48%;
+		border: 1px solid tan;
+		display: flex;
+	}
+
+	.job-img {
+		height: 2.5rem;
+		width: 48%;
+		border: 1px solid purple;
+		display: flex;
+	}
+
+}
