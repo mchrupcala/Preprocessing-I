@@ -194,6 +194,7 @@ h3 {
   }
   .upper-banner .upper-banner {
     height: 40rem;
+    width: 50rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -201,6 +202,7 @@ h3 {
     height: 40%;
   }
   .upper-banner .upper-banner {
+    width: 50rem;
     height: 20rem;
   }
 }
@@ -234,6 +236,7 @@ h3 {
 }
 @media screen and (max-width: 500px) {
   .lower-banner {
+    width: 50rem;
     display: flex;
     flex-direction: column;
   }
@@ -292,6 +295,13 @@ h3 {
 @media screen and (max-width: 500px) {
   .work-history {
     display: flex;
+    flex-direction: column;
+    width: 50rem;
+  }
+  .job-container,
+  .job-desc {
+    width: 50rem;
+    border: none;
     flex-direction: column;
   }
 }
